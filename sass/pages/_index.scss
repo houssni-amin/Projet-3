@@ -8,6 +8,7 @@ img{
 
 #explorer{
     text-align: center;
+    
     span p{
         width: 100%;
         background-color:#F2F2F2;
@@ -86,33 +87,6 @@ img{
     
 }
 
-footer{
-    background-color: rgba(0, 0, 0, 0.815);
-    padding-bottom: 15px;
-
-    img{
-        width: 20%;
-        padding-left: 25px;
-        padding-top: 20px;
-        filter: invert(100%);
-    }
-
-    li{
-        text-decoration: none;
-        color: black;
-    }
-
-    a{
-        color: white;
-        text-decoration: none;
-    }
-
-    ul{
-        list-style: none;
-        padding-left: 25px;
-    }
-
-}
 
 
 

@@ -4,7 +4,7 @@
 		<meta charset="UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Ohmyfood</title> <!-- Ceci est le titre sur l'onglet-->
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="sass/main.css">
 	</head>
 	
 	<body>
@@ -14,12 +14,17 @@
 			</a>
 		</header>
 
-        <img src="images/restaurants/restaurant_4.jpg" alt="À la française"/>
-
+		<div class="presentation">
+			<img src="images/restaurants/restaurant_4.jpg" alt="À la française"/>
+		</div>
+        
         <section id="menu">
 			<h1>Le délice des sens</h1>
-			<div class="entrees">
-                <p>ENTRÉES</p>
+			<div class="plats">
+                <div class="noms">
+					<p>ENTRÉES</p>
+				</div>
+                
 				<a href="#">
 					<div class="food">
 						<h3>Tartare de thon</h3>
@@ -46,7 +51,10 @@
 			</div>
 
 			<div class="plats">
-                <p>PLATS</p>
+                <div class="noms">
+					<p>PLATS</p>
+				</div>
+                
 				<a href="#">
 					<div class="food">
 						<h3>Poulet rôti aux herbes de Provence</h3>
@@ -72,8 +80,11 @@
 				</a>
 			</div>
 
-            <div class="desserts">
-                <p>DESSERTS</p>
+            <div class="plats">
+                <div class="noms">
+					<p>DESSERTS</p>
+				</div>
+               
 				<a href="#">
 					<div class="food">
 						<h3>Farandole de desserts</h3>

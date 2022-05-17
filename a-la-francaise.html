@@ -4,7 +4,7 @@
 		<meta charset="UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Ohmyfood</title> <!-- Ceci est le titre sur l'onglet-->
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="sass/main.css">
 	</head>
 	
 	<body>
@@ -14,14 +14,19 @@
 			</a>
 		</header>
 
-        <img src="images/restaurants/restaurant_3.jpg" alt="À la française"/>
-
+		<div class="presentation">
+			<img src="images/restaurants/restaurant_3.jpg" alt="À la française"/>
+		</div>
+        
         <section id="menu">
 			<h1>À la française</h1>
-			<div class="entrees">
-                <p>ENTRÉES</p>
+			<div class="plats">
+				<div class="noms">
+					<p>ENTRÉES</p>
+				</div>
+                
 				<a href="#">
-					<div class="tartare">
+					<div class="food">
 						<h3>Tartare de poulpe acidulé</h3>
 						<p>Aux zestes d'orange</p>
                         <p>25€</p>
@@ -29,7 +34,7 @@
 				</a>
 
                 <a href="#">
-					<div class="veloute">
+					<div class="food">
 						<h3>Velouté de légumes d'antan</h3>
 						<p>Carotte, panais, topinambour</p>
                         <p>35€</p>
@@ -37,7 +42,7 @@
 				</a>
 
                 <a href="#">
-					<div class="soupe">
+					<div class="food">
 						<h3>Soupe à l'oignon</h3>
 						<p>Revisitée</p>
                         <p>20€</p>
@@ -46,9 +51,12 @@
 			</div>
 
 			<div class="plats">
-                <p>PLATS</p>
+				<div class="noms">
+					<p>PLATS</p>
+				</div>
+                
 				<a href="#">
-					<div class="coquilles">
+					<div class="food">
 						<h3>Coquilles Saint-Jacques</h3>
 						<p>Accompagnées d'une purée de panais</p>
                         <p>40€</p>
@@ -56,7 +64,7 @@
 				</a>
 
                 <a href="#">
-					<div class="magret">
+					<div class="food">
 						<h3>Magret de canard</h3>
 						<p>Et parmentier de pommes de terre</p>
                         <p>35€</p>
@@ -64,7 +72,7 @@
 				</a>
 
                 <a href="#">
-					<div class="pigeonneau">
+					<div class="food">
 						<h3>Pigeonneau d’Ille-et-Vilaine</h3>
 						<p>Sur son lit de gnocchis aux légumes</p>
                         <p>44€</p>
@@ -72,10 +80,13 @@
 				</a>
 			</div>
 
-            <div class="desserts">
-                <p>DESSERTS</p>
+            <div class="plats">
+				<div class="noms">
+					<p>DESSERTS</p>
+				</div>
+                
 				<a href="#">
-					<div class="petales">
+					<div class="food">
 						<h3>Pétales de violettes glacés</h3>
 						<p>Et purée de noisettes</p>
                         <p>18€</p>
@@ -83,7 +94,7 @@
 				</a>
 
                 <a href="#">
-					<div class="fondant">
+					<div class="food">
 						<h3>Fondant au chocolat</h3>
 						<p>Revisité</p>
                         <p>22€</p>
@@ -91,7 +102,7 @@
 				</a>
 
                 <a href="#">
-					<div class="millefeuille">
+					<div class="food">
 						<h3>Millefeuille croustillant</h3>
 						<p>Myrtilles et pâte d’amande</p>
                         <p>23€</p>
@@ -102,7 +113,6 @@
             <form >
 				<button>
 					<span>Commander</span>
-					<i class="fas fa-search"></i>
 				</button>
 			</form>
 		</section>
