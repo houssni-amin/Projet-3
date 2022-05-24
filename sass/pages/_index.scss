@@ -1,19 +1,15 @@
-body{
-    margin: 0px;
-}
-
-img{
-    width: 90%
-}
-
 #explorer{
     text-align: center;
     
-    span p{
-        width: 100%;
-        background-color:#F2F2F2;
-        padding-top: 10px;
-        padding-bottom: 10px;
+    span{
+        p{
+            width: 100%;
+            background-color:#F2F2F2;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-top: 0px;
+        }
+        
     }
 
     button{
@@ -39,15 +35,20 @@ img{
     }
 
     li{
-        margin-bottom: 50px;
+        margin-bottom: 25px;
     }
 
-    a{
-        text-decoration: none;
-        background-color: #F2F2F2;
+    span{
         color: black;
+    }
+
+    .filters{
+        text-decoration: none;
+        background-color: #f2f2f2;
         border-radius: 15px;
         padding: 15px;
+        margin-right: 15px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
 }
 

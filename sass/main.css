@@ -1,3 +1,15 @@
+body {
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 header img {
   width: 50%;
   margin-top: 20px;
@@ -32,14 +44,6 @@ footer ul {
   padding-left: 25px;
 }
 
-body {
-  margin: 0px;
-}
-
-img {
-  width: 90%;
-}
-
 #explorer {
   text-align: center;
 }
@@ -49,6 +53,7 @@ img {
   background-color: #F2F2F2;
   padding-top: 10px;
   padding-bottom: 10px;
+  margin-top: 0px;
 }
 
 #explorer button {
@@ -78,15 +83,21 @@ img {
 }
 
 #fonctionnement li {
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 
-#fonctionnement a {
-  text-decoration: none;
-  background-color: #F2F2F2;
+#fonctionnement span {
   color: black;
+}
+
+#fonctionnement .filters {
+  text-decoration: none;
+  background-color: #f2f2f2;
   border-radius: 15px;
   padding: 15px;
+  margin-right: 15px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 #restaurants {
@@ -152,6 +163,8 @@ header p {
 }
 
 #menu {
+  position: relative;
+  top: -30px;
   background-color: #F2F2F2;
   padding-top: 15px;
   border-top-left-radius: 30px;
@@ -165,6 +178,15 @@ header p {
 
 #menu h1 {
   margin-top: 10px;
+}
+
+#menu .plats .noms p:after {
+  content: "";
+  display: block;
+  background-color: aquamarine;
+  height: 3px;
+  width: 45px;
+  margin-top: 3px;
 }
 
 .food {
