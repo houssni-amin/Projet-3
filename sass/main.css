@@ -144,6 +144,50 @@ footer ul {
   color: black;
 }
 
+#restaurants .heart {
+  position: relative;
+}
+
+#restaurants .heart .heart-border {
+  position: absolute;
+  top: 17px;
+  right: 35px;
+}
+
+#restaurants .heart .heart-border i {
+  color: black;
+}
+
+#restaurants .heart .heart-border:hover {
+  opacity: 0;
+}
+
+#restaurants .heart .heart-animation {
+  position: absolute;
+  top: 17px;
+  right: 35px;
+  opacity: 0;
+}
+
+#restaurants .heart .heart-animation i {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background-image: linear-gradient(#FF79DA, #9356DC);
+}
+
+#restaurants .heart .heart-animation:hover {
+  opacity: 1;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  -webkit-transform: scale(110%);
+          transform: scale(110%);
+}
+
+#restaurants .heart i {
+  color: transparent;
+  -webkit-background-clip: text;
+  font-size: 25px;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -183,7 +227,7 @@ header p {
 #menu .plats .noms p:after {
   content: "";
   display: block;
-  background-color: aquamarine;
+  background-color: #99E2D0;
   height: 3px;
   width: 45px;
   margin-top: 3px;

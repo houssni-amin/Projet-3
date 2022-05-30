@@ -92,7 +92,43 @@
         margin-left: 10px;
         color: black;
     }
-    
+
+    .heart{
+        position: relative;
+        .heart-border{
+            position: absolute;
+            top: 17px;
+            right: 35px;
+            i{
+                color: black;
+            }
+            &:hover{
+                opacity: 0;
+            }
+        }
+
+        .heart-animation{
+            position: absolute;
+            top: 17px;
+            right: 35px;
+            opacity: 0;
+            i{
+                background-image: linear-gradient(#FF79DA, #9356DC);
+            }
+            &:hover{
+                opacity: 1;
+                transition: 0.5s ease-in-out;
+                transform: scale(110%);
+            }
+        }
+
+        i{
+            color: transparent;
+            -webkit-background-clip: text;
+            font-size: 25px;
+
+        }
+    }
 }
 
 
