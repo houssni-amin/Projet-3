@@ -12,6 +12,7 @@ footer{
     li{
         text-decoration: none;
         color: black;
+        margin-top: 5px;
     }
 
     a{
@@ -24,4 +25,11 @@ footer{
         padding-left: 25px;
     }
 
+    span{
+        margin-left: 10px;
+    }
+
+    .forks{
+        margin-left: 17px;
+    }
 }
