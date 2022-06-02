@@ -1,0 +1,55 @@
+.loader{
+    position: fixed;
+    background-color: white;
+    height: 100vh;
+    inset: 0;
+    z-index: 1;
+    opacity: 0.9;
+    animation: loader 0.2s 3s forwards;
+    transform-origin: top;
+    display: grid;
+    place-items: center;
+    &::before{
+        position: absolute;
+        content: "";
+        height: 40px;
+        width: 40px;
+        border-top: 5px solid #FF79DA;
+        border-right:5px solid transparent;
+        border-radius: 50%;
+        animation: spin 3s infinite linear;
+    }
+
+    &::after{
+        position: absolute;
+        content: "";
+        height: 50px;
+        width: 50px;
+        border-bottom: 5px solid #9356DC;
+        border-right:5px solid transparent;
+        border-radius: 50%;
+        animation: spin-reverse 3s infinite linear;
+    }
+}
+
+@keyframes loader{
+    0%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(0);
+    }
+}
+
+@keyframes spin{
+    to{
+        transform: rotate(800deg);
+    }
+}
+
+@keyframes spin-reverse{
+    to{
+        transform: rotate(-800deg);
+    }
+}
