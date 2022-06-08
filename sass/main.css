@@ -62,6 +62,7 @@ footer p {
   font-size: 20px;
   padding-left: 25px;
   padding-top: 20px;
+  margin-top: 0;
 }
 
 footer li {
@@ -125,7 +126,7 @@ footer .forks {
 }
 
 #fonctionnement {
-  margin-left: 15px;
+  margin: 0 20px 0 25px;
 }
 
 #fonctionnement ul {
@@ -156,7 +157,6 @@ footer .forks {
   background-color: #f2f2f2;
   border-radius: 15px;
   padding: 25px 35px;
-  margin-right: 15px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   position: relative;
@@ -312,30 +312,56 @@ footer .forks {
 }
 
 .food {
-  background-color: white(214, 27, 27);
+  background-color: #f4f4f4;
   border-radius: 15px;
   color: black;
-  padding: 5px 10px;
   margin-bottom: 15px;
-  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   -webkit-animation: apparition 1s;
           animation: apparition 1s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
 }
 
 .food h3 {
-  margin-top: 5px;
+  margin-top: 10px;
   margin-bottom: 5px;
+  margin-left: 10px;
 }
 
 .food p {
   margin-top: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  margin-left: 10px;
 }
 
-.food span {
-  float: right;
+.food .price {
   font-weight: bold;
+  margin-left: auto;
+  margin-top: 37px;
+  margin-right: 15px;
+}
+
+.food .check {
+  color: white;
+  margin: 0;
+  padding: 0;
+  background-color: #99E2D0;
+  width: 50px;
+  margin-right: -50px;
+  border-radius: 0 15px 15px 0;
+  -webkit-transition: margin-right 0.5s;
+  transition: margin-right 0.5s;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.food:hover .check {
+  margin-right: 0px;
 }
 
 .plats .noms {
@@ -430,6 +456,28 @@ button span {
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes check-spin {
+  0% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+@keyframes check-spin {
+  0% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
   }
 }
 
