@@ -171,6 +171,32 @@
     }
 }
 
+@media all and (min-width: 768px){
+    .fonctionnement{
+        display: flex;
+        flex-direction: center;
+    }
+
+    .flex{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .content{
+            min-width: 300px
+        }
+    }
+
+    footer{ 
+        padding-bottom: 30px;
+        ul{
+            padding: 0;
+            display: flex;
+            justify-content: space-around; 
+        }
+    }
+}
+
 
 
 
