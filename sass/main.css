@@ -592,8 +592,8 @@ button span {
   inset: 0;
   z-index: 1;
   opacity: 0.9;
-  -webkit-animation: loader 0s 0s forwards;
-          animation: loader 0s 0s forwards;
+  -webkit-animation: loader 0.2s 3s forwards;
+          animation: loader 0.2s 3s forwards;
   -webkit-transform-origin: top;
           transform-origin: top;
   display: -ms-grid;

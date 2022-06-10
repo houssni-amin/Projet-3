@@ -5,7 +5,7 @@
     inset: 0;
     z-index: 1;
     opacity: 0.9;
-    animation: loader 0s 0s forwards; //modifier pour activer loader!!! (mettre 0.2s et 3s)
+    animation: loader 0.2s 3s forwards;
     transform-origin: top;
     display: grid;
     place-items: center;
