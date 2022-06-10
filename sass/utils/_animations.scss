@@ -19,3 +19,9 @@
         transform: rotate(0);
     }
 }
+
+@keyframes rotate{
+    100%{
+        -webkit-transform: rotate(-360deg);
+    }
+}
