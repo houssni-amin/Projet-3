@@ -121,6 +121,14 @@ footer .forks {
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+#explorer button:hover {
+  cursor: pointer;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f893db), to(#9e6fd8));
+  background-image: linear-gradient(to bottom, #f893db, #9e6fd8);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+          box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
 #explorer button span {
   color: white;
   font-size: 15px;
@@ -158,6 +166,15 @@ footer .forks {
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   position: relative;
   font-size: 20px;
+}
+
+#fonctionnement .filters:hover {
+  cursor: pointer;
+  background-color: #9256dc28;
+}
+
+#fonctionnement .filters:hover i {
+  color: #9356DC;
 }
 
 #fonctionnement .numbers {
@@ -441,6 +458,14 @@ button {
   margin-bottom: 50px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f893db), to(#9e6fd8));
+  background-image: linear-gradient(to bottom, #f893db, #9e6fd8);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+          box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 button span {
